@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2DC2FCC42B537A3C00CD9BA2 /* inputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputView.swift; sourceTree = SOURCE_ROOT; };
+		2DC2FCC42B537A3C00CD9BA2 /* inputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = inputView.swift; path = LiveSafety/Components/inputView.swift; sourceTree = SOURCE_ROOT; };
 		2DF0449E2B53768D00D10F38 /* LiveSafety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveSafety.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DF044A12B53768D00D10F38 /* LiveSafetyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSafetyApp.swift; sourceTree = "<group>"; };
 		2DF044A32B53768D00D10F38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +73,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DC2FCC62B537A8500CD9BA2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2DC2FCC42B537A3C00CD9BA2 /* inputView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2DC2FCC72B537A9E00CD9BA2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		2DF044952B53768D00D10F38 = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				2DF044CB2B5376B800D10F38 /* App */,
-				2DF044CC2B5376C500D10F38 /* Components */,
-				2DF044CD2B5376D400D10F38 /* Core */,
+				2DC2FCC62B537A8500CD9BA2 /* Components */,
+				2DC2FCC72B537A9E00CD9BA2 /* Core */,
 				2DF044A32B53768D00D10F38 /* ContentView.swift */,
 				2DF044A52B53768E00D10F38 /* Assets.xcassets */,
 				2DF044A72B53768E00D10F38 /* Preview Content */,
@@ -137,21 +152,6 @@
 				2DF044A12B53768D00D10F38 /* LiveSafetyApp.swift */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		2DF044CC2B5376C500D10F38 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				2DC2FCC42B537A3C00CD9BA2 /* inputView.swift */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		2DF044CD2B5376D400D10F38 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
