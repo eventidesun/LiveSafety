@@ -15,7 +15,7 @@ struct HomePage: View {
                 .ignoresSafeArea()
             
             VStack(alignment: .center){
-                Text("Hi, Y/N")
+                Text("Hi!")
                     .font(.title)
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
