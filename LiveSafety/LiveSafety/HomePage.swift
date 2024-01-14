@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomePage: View {
-    @State private var showAlert = false
+    @State private var showNotification = false
     
     var body: some View {
         ZStack {
@@ -21,6 +21,20 @@ struct HomePage: View {
                 Spacer()
                 sendAlertButton
                 undoActionButton
+            }
+            
+            // Notification View
+            if showNotification {
+                notificationView
+                    .transition(.opacity)
+                    .onAppear {
+                        // fade out after 2 seconds
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                            withAnimation {
+                                showNotification = false
+                            }
+                        }
+                    }
             }
         }
     }
@@ -41,7 +55,9 @@ struct HomePage: View {
 
     private var sendAlertButton: some View {
         Button(action: {
-            self.showAlert = true
+            withAnimation {
+                showNotification = true
+            }
         }) {
             Text("Send Alert")
                 .font(.largeTitle)
@@ -51,27 +67,39 @@ struct HomePage: View {
                 .background(Color(red: 82/255, green: 0/255, blue: 255/255))
                 .cornerRadius(30)
         }
-        .alert(isPresented: $showAlert) {
-            Alert(title: Text("Alert Sent"), message: Text("Your alert and live location have been sent successfully."))
-        }
-        
-        
+    }
+    
+    private var notificationView: some View {
+        Text("Alert and live location sent")
+            .font(.headline)
+            .foregroundStyle(.white)
+            .padding()
+            .background(Color.white)
+            .cornerRadius(10)
+            .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+            .padding()
+            .opacity(showNotification ? 1 : 0)
     }
 
     private var undoActionButton: some View {
-        VStack(alignment: .center, spacing: 5) {
-            Text("Undo Action")
-                .font(.title3)
-                .fontWeight(.bold)
-                .foregroundColor(.white)
+        Button(action: {
             
-            Rectangle()
-                .frame(width: 125, height: 3)
-                .foregroundColor(Color(red: 82/255, green: 0/255, blue: 255/255))
-                .padding(.top, -5)
+        }) {
+            VStack(alignment: .center, spacing: 5) {
+                Text("Undo Action")
+                    .font(.title3)
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                
+                Rectangle()
+                    .frame(width: 125, height: 3)
+                    .foregroundColor(Color(red: 82/255, green: 0/255, blue: 255/255))
+                    .padding(.top, -5)
+            }
+            .padding([.top, .bottom], 10)
+            .padding(EdgeInsets(top: 0, leading: 0, bottom: 300, trailing: 0))
         }
-        .padding([.top, .bottom], 10)
-        .padding(EdgeInsets(top: 0, leading: 0, bottom: 300, trailing: 0))
+        
     }
     
     

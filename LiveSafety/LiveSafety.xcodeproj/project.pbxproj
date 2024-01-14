@@ -204,8 +204,8 @@
 		32855FC52B538CC4003BB2F1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2DC2FCCC2B537C0400CD9BA2 /* LoginView.swift */,
 				2DC2FCCE2B537D2E00CD9BA2 /* RegistrationView.swift */,
+				2DC2FCCC2B537C0400CD9BA2 /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
