@@ -2,7 +2,7 @@
 //  AuthViewModel.swift
 //  LiveSafety
 //
-//  Created by Anne Liu on 2024-01-13.
+//  Created by Vaishnavi Gudimella on 2024-01-13.
 //
 
 import Foundation
