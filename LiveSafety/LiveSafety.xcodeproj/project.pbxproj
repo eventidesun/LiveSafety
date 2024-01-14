@@ -18,6 +18,7 @@
 		2DF044B32B53768E00D10F38 /* LiveSafetyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF044B22B53768E00D10F38 /* LiveSafetyTests.swift */; };
 		2DF044BD2B53768E00D10F38 /* LiveSafetyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF044BC2B53768E00D10F38 /* LiveSafetyUITests.swift */; };
 		2DF044BF2B53768E00D10F38 /* LiveSafetyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF044BE2B53768E00D10F38 /* LiveSafetyUITestsLaunchTests.swift */; };
+		32855FBB2B538489003BB2F1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32855FBA2B538489003BB2F1 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		2DF044B82B53768E00D10F38 /* LiveSafetyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveSafetyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DF044BC2B53768E00D10F38 /* LiveSafetyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSafetyUITests.swift; sourceTree = "<group>"; };
 		2DF044BE2B53768E00D10F38 /* LiveSafetyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSafetyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		32855FBA2B538489003BB2F1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		2DC2FCC72B537A9E00CD9BA2 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				32855FB92B53847D003BB2F1 /* Profile */,
 				2DC2FCC92B537AD100CD9BA2 /* Root */,
 				2DC2FCC82B537ACB00CD9BA2 /* Authentication */,
 			);
@@ -177,6 +180,14 @@
 				2DF044A12B53768D00D10F38 /* LiveSafetyApp.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		32855FB92B53847D003BB2F1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				32855FBA2B538489003BB2F1 /* ProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +325,7 @@
 				2DF044A22B53768D00D10F38 /* LiveSafetyApp.swift in Sources */,
 				2DC2FCCF2B537D2E00CD9BA2 /* RegistrationView.swift in Sources */,
 				2DC2FCCD2B537C0400CD9BA2 /* LoginView.swift in Sources */,
+				32855FBB2B538489003BB2F1 /* ProfileView.swift in Sources */,
 				2DC2FCCB2B537B0A00CD9BA2 /* HomePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
