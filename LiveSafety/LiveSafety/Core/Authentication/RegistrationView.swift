@@ -18,6 +18,7 @@ struct RegistrationView: View {
         //Heading
         
         Text("Create Account")
+            .padding(.top, 100)
         
         //forms
         VStack(spacing: 24) {
@@ -59,7 +60,7 @@ struct RegistrationView: View {
             RoundedRectangle(cornerRadius: 30)
                 .stroke(Color.purple, lineWidth: 2) //FIXME: make the purple different
         )
-        .padding(.top, 24)
+        .padding(.top, 80)
 
         Spacer()
     }
