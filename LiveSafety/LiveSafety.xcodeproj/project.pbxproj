@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2DC2FCC52B537A3C00CD9BA2 /* inputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC2FCC42B537A3C00CD9BA2 /* inputView.swift */; };
+		2DC2FCCB2B537B0A00CD9BA2 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC2FCCA2B537B0A00CD9BA2 /* HomePage.swift */; };
 		2DF044A22B53768D00D10F38 /* LiveSafetyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF044A12B53768D00D10F38 /* LiveSafetyApp.swift */; };
 		2DF044A42B53768D00D10F38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF044A32B53768D00D10F38 /* ContentView.swift */; };
 		2DF044A62B53768E00D10F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF044A52B53768E00D10F38 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		2DC2FCC42B537A3C00CD9BA2 /* inputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = inputView.swift; path = LiveSafety/Components/inputView.swift; sourceTree = SOURCE_ROOT; };
+		2DC2FCCA2B537B0A00CD9BA2 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		2DF0449E2B53768D00D10F38 /* LiveSafety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveSafety.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DF044A12B53768D00D10F38 /* LiveSafetyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSafetyApp.swift; sourceTree = "<group>"; };
 		2DF044A32B53768D00D10F38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 		2DF044A02B53768D00D10F38 /* LiveSafety */ = {
 			isa = PBXGroup;
 			children = (
+				2DC2FCCA2B537B0A00CD9BA2 /* HomePage.swift */,
 				2DF044CB2B5376B800D10F38 /* App */,
 				2DC2FCC62B537A8500CD9BA2 /* Components */,
 				2DC2FCC72B537A9E00CD9BA2 /* Core */,
@@ -303,6 +306,7 @@
 				2DC2FCC52B537A3C00CD9BA2 /* inputView.swift in Sources */,
 				2DF044A42B53768D00D10F38 /* ContentView.swift in Sources */,
 				2DF044A22B53768D00D10F38 /* LiveSafetyApp.swift in Sources */,
+				2DC2FCCB2B537B0A00CD9BA2 /* HomePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
