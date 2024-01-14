@@ -24,12 +24,15 @@ struct HomePage: View {
 
     // Extracted subviews for better readability and reusability
     private var greetingText: some View {
-        Text("Hi!")
-            .font(.title)
-            .fontWeight(.semibold)
-            .foregroundColor(.white)
-            .multilineTextAlignment(.center)
-            .frame(width: 200, height: 200, alignment: .top)
+        HStack {
+            Text("Hello!")
+                .font(.title)
+                .fontWeight(.semibold)
+                .foregroundColor(.white)
+                .padding(.leading)
+            Spacer() // Pushes the text to the top
+        }
+        .padding(.top) // Add padding to the top edge
     }
 
     private var sendAlertButton: some View {
@@ -43,13 +46,21 @@ struct HomePage: View {
     }
 
     private var undoActionButton: some View {
-        Text("Undo Action")
-            .font(.title3)
-            .foregroundColor(.white)
-            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-            .underline()
-            .padding()
+        VStack(alignment: .center, spacing: 5) {
+            Text("Undo Action")
+                .font(.title3)
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+            
+            Rectangle()
+                .frame(width: 125, height: 3)
+                .foregroundColor(Color(red: 82/255, green: 0/255, blue: 255/255))
+                .padding(.top, -5)
+        }
+        .padding()
     }
+    
+    
 }
 
 #Preview {
