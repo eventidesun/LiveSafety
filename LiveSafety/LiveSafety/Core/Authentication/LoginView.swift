@@ -13,6 +13,8 @@ struct LoginView: View {
     var body: some View {
         NavigationStack {
             VStack {
+                //Header
+                Text("Create Account")
                 //form fields
                 VStack(spacing: 24) {
                     inputView(text: $email,
@@ -37,8 +39,8 @@ struct LoginView: View {
                         Text("Log In")
                             .fontWeight(.semibold)
                     }
-                    .foregroundColor(.white)
-                    .frame(width: UIScreen.main.bounds.width - 80, height: 48) //FIXME: fix width
+                    .foregroundColor(.black)
+                    .frame(width: UIScreen.main.bounds.width - 270, height: 40) //FIXME: fix width
                 }
                 .background(Color(.clear)) //FIXME: does clear work?
                 .cornerRadius(30)
@@ -59,6 +61,7 @@ struct LoginView: View {
                             .fontWeight(.bold)
                     }
                     .font(.system(size: 14))
+                    .foregroundColor(.black)
                 }
             }
         }
