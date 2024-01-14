@@ -9,11 +9,17 @@ import SwiftUI
 
 struct RegistrationView: View {
     @State private var email = ""
-    @State private var fullname = ""
-    @State private var password = ""
-    @State private var confirmPassword = ""
-    @Environment(\.dismiss) var dismiss
+        @State private var fullname = ""
+        @State private var password = ""
+        @State private var confirmPassword = ""
+        @Environment(\.dismiss) var dismiss
+    
     var body: some View {
+        //Heading
+        
+        Text("Create Account")
+        
+        //forms
         VStack(spacing: 24) {
             inputView(text: $email,
                         title: "Email Address",
@@ -44,8 +50,8 @@ struct RegistrationView: View {
                 Text("SIGN UP")
                     .fontWeight(.semibold)
             }
-            .foregroundColor(.white)
-            .frame(width: UIScreen.main.bounds.width - 80, height: 48) //FIXME: fix width
+            .foregroundColor(.black)
+            .frame(width: UIScreen.main.bounds.width - 280, height: 40) //FIXME: fix width
         }
         .background(Color(.clear)) //FIXME: does clear work?
         .cornerRadius(30)
@@ -58,6 +64,7 @@ struct RegistrationView: View {
         Spacer()
     }
 }
+
 
 
 
