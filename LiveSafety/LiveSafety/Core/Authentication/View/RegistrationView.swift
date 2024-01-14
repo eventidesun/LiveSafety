@@ -28,7 +28,7 @@ struct RegistrationView: View {
                     .autocapitalization(.none)
                 
                 inputView(text: $fullname,
-                          title: "Full Name",
+                          title: "Name",
                           placeholder: "Enter your name")
                 
                 inputView(text: $password,

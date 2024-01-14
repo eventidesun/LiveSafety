@@ -24,6 +24,7 @@
 		32855FC22B538C6E003BB2F1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 32855FC12B538C6E003BB2F1 /* FirebaseFirestore */; };
 		32855FC42B538C6E003BB2F1 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 32855FC32B538C6E003BB2F1 /* FirebaseFirestoreSwift */; };
 		32855FC82B538CF9003BB2F1 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32855FC72B538CF9003BB2F1 /* AuthViewModel.swift */; };
+		32D569E72B53C5E10079CA9D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D569E62B53C5E10079CA9D /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		32855FBA2B538489003BB2F1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		32855FBC2B538901003BB2F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		32855FC72B538CF9003BB2F1 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		32D569E62B53C5E10079CA9D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				2DC2FCCA2B537B0A00CD9BA2 /* HomePage.swift */,
-				32D569E52B53C4520079CA9D /* New Group */,
+				32D569E52B53C4520079CA9D /* Model */,
 				2DF044CB2B5376B800D10F38 /* App */,
 				2DC2FCC62B537A8500CD9BA2 /* Components */,
 				2DC2FCC72B537A9E00CD9BA2 /* Core */,
@@ -219,11 +221,12 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		32D569E52B53C4520079CA9D /* New Group */ = {
+		32D569E52B53C4520079CA9D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				32D569E62B53C5E10079CA9D /* User.swift */,
 			);
-			path = "New Group";
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,6 +373,7 @@
 				2DF044A22B53768D00D10F38 /* LiveSafetyApp.swift in Sources */,
 				2DC2FCCF2B537D2E00CD9BA2 /* RegistrationView.swift in Sources */,
 				32855FC82B538CF9003BB2F1 /* AuthViewModel.swift in Sources */,
+				32D569E72B53C5E10079CA9D /* User.swift in Sources */,
 				2DC2FCCD2B537C0400CD9BA2 /* LoginView.swift in Sources */,
 				32855FBB2B538489003BB2F1 /* ProfileView.swift in Sources */,
 				2DC2FCCB2B537B0A00CD9BA2 /* HomePage.swift in Sources */,
