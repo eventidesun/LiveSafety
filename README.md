@@ -21,7 +21,6 @@ Add numbers/sync contacts
 <img width="269" alt="Screenshot 2024-01-14 at 8 38 22 AM" src="https://github.com/eventidesun/LiveSafety/assets/118631877/4b811ffa-e8d8-4862-9c4f-a596d3a9606b">
 
 
-
 <img width="269" alt="Screenshot 2024-01-14 at 8 37 55 AM" src="https://github.com/eventidesun/LiveSafety/assets/118631877/24fee513-04e0-4588-8f2e-3b284e29bd39">
 
 
