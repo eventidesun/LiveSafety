@@ -13,19 +13,19 @@ Sign-in/login page
 
 Home page
 
-<img width="322" alt="Screenshot 2024-01-14 at 8 36 44 AM" src="https://github.com/eventidesun/LiveSafety/assets/118631877/8da81f0f-0d46-4181-9c75-9af6dac7b2e8">
+<img width="269" alt="Screenshot 2024-01-14 at 8 36 44 AM" src="https://github.com/eventidesun/LiveSafety/assets/118631877/8da81f0f-0d46-4181-9c75-9af6dac7b2e8">
 
 
 Add numbers/sync contacts
 
-<img width="191" alt="Screenshot 2024-01-14 at 8 38 22 AM" src="https://github.com/eventidesun/LiveSafety/assets/118631877/4b811ffa-e8d8-4862-9c4f-a596d3a9606b">
+<img width="200" alt="Screenshot 2024-01-14 at 8 38 22 AM" src="https://github.com/eventidesun/LiveSafety/assets/118631877/4b811ffa-e8d8-4862-9c4f-a596d3a9606b">
 
-<img width="199" alt="Screenshot 2024-01-14 at 8 37 55 AM" src="https://github.com/eventidesun/LiveSafety/assets/118631877/24fee513-04e0-4588-8f2e-3b284e29bd39">
+<img width="200" alt="Screenshot 2024-01-14 at 8 37 55 AM" src="https://github.com/eventidesun/LiveSafety/assets/118631877/24fee513-04e0-4588-8f2e-3b284e29bd39">
 
 
 Widget
 
-<img width="206" alt="Screenshot 2024-01-14 at 8 45 44 AM" src="https://github.com/eventidesun/LiveSafety/assets/118631877/405c1925-35aa-430f-8af6-e6b4b2b75e99">
+<img width="269" alt="Screenshot 2024-01-14 at 8 45 44 AM" src="https://github.com/eventidesun/LiveSafety/assets/118631877/405c1925-35aa-430f-8af6-e6b4b2b75e99">
 
 
 
