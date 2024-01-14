@@ -84,8 +84,25 @@
 		2DC2FCC72B537A9E00CD9BA2 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2DC2FCC92B537AD100CD9BA2 /* Root */,
+				2DC2FCC82B537ACB00CD9BA2 /* Authentication */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		2DC2FCC82B537ACB00CD9BA2 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		2DC2FCC92B537AD100CD9BA2 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				2DF044A32B53768D00D10F38 /* ContentView.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 		2DF044952B53768D00D10F38 = {
@@ -114,7 +131,6 @@
 				2DF044CB2B5376B800D10F38 /* App */,
 				2DC2FCC62B537A8500CD9BA2 /* Components */,
 				2DC2FCC72B537A9E00CD9BA2 /* Core */,
-				2DF044A32B53768D00D10F38 /* ContentView.swift */,
 				2DF044A52B53768E00D10F38 /* Assets.xcassets */,
 				2DF044A72B53768E00D10F38 /* Preview Content */,
 			);
