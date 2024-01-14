@@ -1,3 +1,10 @@
+//
+//  HomePage.swift
+//  LiveSafety
+//
+//  Created by Anisa Foroozan on 2024-01-13.
+//
+
 import SwiftUI
 
 struct SyncContacts: View {
