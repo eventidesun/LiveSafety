@@ -97,7 +97,6 @@
 				2DF044CB2B5376B800D10F38 /* App */,
 				2DF044CC2B5376C500D10F38 /* Components */,
 				2DF044CD2B5376D400D10F38 /* Core */,
-				2DF044A12B53768D00D10F38 /* LiveSafetyApp.swift */,
 				2DF044A32B53768D00D10F38 /* ContentView.swift */,
 				2DF044A52B53768E00D10F38 /* Assets.xcassets */,
 				2DF044A72B53768E00D10F38 /* Preview Content */,
@@ -133,6 +132,7 @@
 		2DF044CB2B5376B800D10F38 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				2DF044A12B53768D00D10F38 /* LiveSafetyApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
