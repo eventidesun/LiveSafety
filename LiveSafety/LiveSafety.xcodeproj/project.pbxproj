@@ -150,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				2DC2FCCA2B537B0A00CD9BA2 /* HomePage.swift */,
+				32D569E52B53C4520079CA9D /* New Group */,
 				2DF044CB2B5376B800D10F38 /* App */,
 				2DC2FCC62B537A8500CD9BA2 /* Components */,
 				2DC2FCC72B537A9E00CD9BA2 /* Core */,
@@ -216,6 +217,13 @@
 				32855FC72B538CF9003BB2F1 /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		32D569E52B53C4520079CA9D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

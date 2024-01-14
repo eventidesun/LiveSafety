@@ -22,7 +22,7 @@ class AuthViewModel: ObservableObject {
         self.userSession = Auth.auth().currentUser
         
         Task {
-            await fetchUser()
+            //FIXME: await fetchUser()
         }
     }
     
@@ -30,13 +30,13 @@ class AuthViewModel: ObservableObject {
         do {
             let result = try await Auth.auth().signIn(withEmail: email, password: password)
             self.userSession = result.user
-            await fetchUser()
+            //FIXME: await fetchUser()
         } catch {
             print("DEBUG: Failed to login with error\(error.localizedDescription)")
         }
     }
     
-    func createUser(withEmail email: String, password: String, fullname: String) async throws {
+   /* func createUser(withEmail email: String, password: String, fullname: String) async throws {
         do {
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
             self.userSession = result.user
@@ -55,5 +55,5 @@ class AuthViewModel: ObservableObject {
         self.currentUser = try? snapshot.data(as: User.self)
         
         print("DEBUG: Current user is \(self.currentUser)")
-    }
+    }*/
 }

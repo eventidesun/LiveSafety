@@ -66,6 +66,8 @@ struct RegistrationView: View {
                     .stroke(Color.purple, lineWidth: 2) // FIXME: make the purple different
             )
             .padding(.top, 80)
+            .disabled(!formIsValid)
+            .opacity(formIsValid ? 1.0 : 0.5)
             
             // Navigation Link to LoginView
             NavigationLink {
@@ -82,6 +84,19 @@ struct RegistrationView: View {
             }
             .padding(.top, 100)
         }
+    }
+}
+
+//MARK: - AuthenticationFormProtocol
+
+extension RegistrationView: AuthenticationFormProtocol {
+    var formIsValid: Bool {
+        return !email.isEmpty
+        && email.contains("@")
+        && !password.isEmpty
+        && password.count > 5
+        && confirmPassword == password
+        && !fullname.isEmpty
     }
 }
 
