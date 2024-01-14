@@ -10,6 +10,7 @@ import SwiftUI
 struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         NavigationStack {
             VStack {
@@ -52,8 +53,8 @@ struct LoginView: View {
                 
                 //sign up button
                 
-                NavigationLink {
-                    
+                Button {
+                    dismiss()
                 } label: {
                     HStack(spacing: 3) {
                         Text("Don't have an account?")
@@ -63,10 +64,12 @@ struct LoginView: View {
                     .font(.system(size: 14))
                     .foregroundColor(.black)
                 }
+                .padding(.top, 100)
+                }
             }
         }
     }
-}
+
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
