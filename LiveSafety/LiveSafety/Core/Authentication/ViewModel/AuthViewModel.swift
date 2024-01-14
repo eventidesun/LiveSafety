@@ -24,7 +24,3 @@ class AuthViewModel: ObservableObject {
         print("Create user")
     }
 }
-
-#Preview {
-    AuthViewModel()
-}
