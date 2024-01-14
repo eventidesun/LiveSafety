@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct HomePage: View {
-    @State private var showNotification = false
-    
+    @State private var showAlert = false
+    @State private var showUndo = false
+
     var body: some View {
         ZStack {
             // Background
@@ -21,20 +22,6 @@ struct HomePage: View {
                 Spacer()
                 sendAlertButton
                 undoActionButton
-            }
-            
-            // Notification View
-            if showNotification {
-                notificationView
-                    .transition(.opacity)
-                    .onAppear {
-                        // fade out after 2 seconds
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                            withAnimation {
-                                showNotification = false
-                            }
-                        }
-                    }
             }
         }
     }
@@ -55,9 +42,7 @@ struct HomePage: View {
 
     private var sendAlertButton: some View {
         Button(action: {
-            withAnimation {
-                showNotification = true
-            }
+            self.showAlert = true
         }) {
             Text("Send Alert")
                 .font(.largeTitle)
@@ -67,23 +52,14 @@ struct HomePage: View {
                 .background(Color(red: 82/255, green: 0/255, blue: 255/255))
                 .cornerRadius(30)
         }
-    }
-    
-    private var notificationView: some View {
-        Text("Alert and live location sent")
-            .font(.headline)
-            .foregroundStyle(.white)
-            .padding()
-            .background(Color.white)
-            .cornerRadius(10)
-            .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-            .padding()
-            .opacity(showNotification ? 1 : 0)
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text("Alert Sent"), message: Text("Your alert and live location have been sent successfully."), dismissButton: .default(Text("OK")))
+        }
     }
 
     private var undoActionButton: some View {
         Button(action: {
-            
+            self.showUndo = true
         }) {
             VStack(alignment: .center, spacing: 5) {
                 Text("Undo Action")
@@ -99,7 +75,9 @@ struct HomePage: View {
             .padding([.top, .bottom], 10)
             .padding(EdgeInsets(top: 0, leading: 0, bottom: 300, trailing: 0))
         }
-        
+        .alert(isPresented: $showUndo) {
+            Alert(title: Text("Undo Alert"), message: Text("Your alert and live location have been unsent"), dismissButton: .default(Text("OK")))
+        }
     }
     
     
